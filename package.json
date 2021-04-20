@@ -6,17 +6,35 @@
   "scripts": {
     "test": "npm run start",
     "start": "electron .",
-    "build": "electron-builder",
+    "build": "electron-builder build",
+    "build:osx": "electron-builder build --mac",
+    "build:win": "electron-builder build --win --x64",
+    "build:all": "npm run build:win && npm run build:osx",
     "pack": "npm run build"
   },
   "author": "All PGS (kms0219kms@naver.com)",
   "license": "ISC",
   "devDependencies": {
     "electron": "^12.0.4",
-    "electron-builder": "^22.10.5"
+    "electron-builder": "^22.10.5",
+    "path": "^0.12.7"
   },
   "build": {
     "productName": "NavyismDesktop",
-    "appId": "네이비즘 서버시간"
+    "appId": "네이비즘 서버시간",
+    "mac": {
+      "target": [
+        "default"
+      ],
+      "icon": "favicon.icns"
+    },
+    "dmg": {
+      "title": "네이비즘 서버시간",
+      "icon": "favicon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "logo.png"
+    }
   }
 }
