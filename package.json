@@ -16,7 +16,7 @@
     "electron-builder": "^22.10.5"
   },
   "build": {
-    "productName": "네이비즘 서버시간",
-    "appId": "NavyismDesktop"
+    "productName": "NavyismDesktop",
+    "appId": "네이비즘 서버시간"
   }
 }

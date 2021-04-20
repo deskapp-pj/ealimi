@@ -7,8 +7,8 @@ let win
 function createWindow () {
   // 브라우저 창을 생성합니다.
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1280,
+    height: 720,
     webPreferences: {
       nodeIntegration: true
     }
@@ -18,7 +18,7 @@ function createWindow () {
   win.loadFile('index.html')
 
   // 개발자 도구를 엽니다.
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 
   // 창이 닫힐 때 발생합니다
   win.on('closed', () => {
