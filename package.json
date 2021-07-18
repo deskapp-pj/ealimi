@@ -1,7 +1,7 @@
 {
-  "name": "navyism",
+  "name": "ealimi",
   "version": "1.0.0",
-  "description": "네이비즘 서버시간의 데스크탑 버전입니다.",
+  "description": "e알리미의 데스크탑 버전입니다.",
   "main": "main.js",
   "scripts": {
     "test": "npm run start",
@@ -20,8 +20,8 @@
     "path": "^0.12.7"
   },
   "build": {
-    "productName": "NavyismDesktop",
-    "appId": "네이비즘 서버시간",
+    "productName": "e알리미",
+    "appId": "ealimi",
     "mac": {
       "target": [
         "default"
@@ -29,7 +29,7 @@
       "icon": "favicon.icns"
     },
     "dmg": {
-      "title": "네이비즘 서버시간",
+      "title": "e알리미",
       "icon": "favicon.icns"
     },
     "win": {
